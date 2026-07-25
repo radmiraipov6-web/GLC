@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GLC — стекольная мастерская</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Style.css">
+<script src="Script.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">GLC<span>.</span></a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="about.html">О мастерской</a>
+      <a href="delivery.html">Доставка и оплата</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-right">
+      <button class="cart-btn">Корзина <span class="cart-count">0</span></button>
+      <div class="burger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Обработка листового стекла с 2011 года</span>
+      <h1>Стекло, которое <em>держит форму</em><br>дома и в деле</h1>
+      <p>Закалённое, термоупрочнённое, осветлённое, оптивайт, серое и кристалл — режем, обрабатываем кромку и закаляем под конкретный проект. Расчёт стоимости за 15 минут.</p>
+      <div class="hero-ctas">
+        <a href="catalog.html" class="btn btn-primary">Смотреть каталог</a>
+        <a href="contacts.html" class="btn btn-ghost">Рассчитать проект</a>
+      </div>
+    </div>
+    <div class="shard-field">
+      <div class="shard shard-a"></div>
+      <div class="shard shard-b"></div>
+      <div class="shard shard-c"></div>
+    </div>
+  </div>
+</section>
+
+<section class="band-sand">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Что мы режем и закаляем</span>
+      <h2>Шесть видов стекла под любую задачу</h2>
+      <p>От душевых кабин до фасадного остекления — у каждого вида своя область применения и своя цена за м².</p>
+    </div>
+    <div class="grid-3">
+
+      <div class="card">
+        <div class="swatch sw-1"></div>
+        <h3>Закалённое</h3>
+        <p class="desc">Прошло термическую закалку — прочность выше обычного стекла в 5 раз, при разрушении рассыпается на неострые фрагменты.</p>
+        <p class="meta">4–19 мм · безопасное</p>
+        <div class="price-row">
+          <span class="price">от 3 200 ₽<small> / м²</small></span>
+          <button class="add-btn" data-name="Закалённое стекло">В корзину</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="swatch sw-2"></div>
+        <h3>Термоупрочнённое</h3>
+        <p class="desc">Промежуточная прочность между обычным и закалённым стеклом. При разрушении держит форму в проёме.</p>
+        <p class="meta">4–12 мм · фасады</p>
+        <div class="price-row">
+          <span class="price">от 2 700 ₽<small> / м²</small></span>
+          <button class="add-btn" data-name="Термоупрочнённое стекло">В корзину</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="swatch sw-3"></div>
+        <h3>Осветлённое</h3>
+        <p class="desc">Низкое содержание оксида железа — минимальный зелёный оттенок в торце, максимальная светопрозрачность.</p>
+        <p class="meta">4–10 мм · витрины</p>
+        <div class="price-row">
+          <span class="price">от 4 100 ₽<small> / м²</small></span>
+          <button class="add-btn" data-name="Осветлённое стекло">В корзину</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="swatch sw-4"></div>
+        <h3>Оптивайт</h3>
+        <p class="desc">Премиальное сверхпрозрачное стекло без цветового искажения — для мебели и витражей, где важна чистота цвета.</p>
+        <p class="meta">4–12 мм · мебель</p>
+        <div class="price-row">
+          <span class="price">от 5 400 ₽<small> / м²</small></span>
+          <button class="add-btn" data-name="Стекло Оптивайт">В корзину</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="swatch sw-5"></div>
+        <h3>Серое (тонированное)</h3>
+        <p class="desc">Тонировка в массе снижает светопропускание и блики — популярно для фасадов и перегородок в офисах.</p>
+        <p class="meta">4–10 мм · перегородки</p>
+        <div class="price-row">
+          <span class="price">от 3 600 ₽<small> / м²</small></span>
+          <button class="add-btn" data-name="Серое стекло">В корзину</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="swatch sw-6"></div>
+        <h3>Кристалл</h3>
+        <p class="desc">Максимально прозрачное флоат-стекло высшего сорта без визуальных дефектов — для дверей и перегородок.</p>
+        <p class="meta">6–12 мм · двери</p>
+        <div class="price-row">
+          <span class="price">от 4 800 ₽<small> / м²</small></span>
+          <button class="add-btn" data-name="Стекло Кристалл">В корзину</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="band-deep">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Почему GLC</span>
+      <h2>Своя линия закалки и раскроя</h2>
+    </div>
+    <div class="feat-list">
+      <div class="feat">
+        <span class="num">01</span>
+        <div><h4>Раскрой по чертежу</h4><p>Присылаете эскиз или размеры — вырежем по контуру с допуском ±0.5 мм.</p></div>
+      </div>
+      <div class="feat">
+        <span class="num">02</span>
+        <div><h4>Закалка на месте</h4><p>Собственная печь закалки — не зависим от подрядчиков и сроков.</p></div>
+      </div>
+      <div class="feat">
+        <span class="num">03</span>
+        <div><h4>Обработка кромки</h4><p>Полировка, фацет, матирование — под интерьер или фасад.</p></div>
+      </div>
+      <div class="feat">
+        <span class="num">04</span>
+        <div><h4>Доставка с монтажом</h4><p>Везём в спецкоробах, при необходимости — устанавливаем сами.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Есть чертёж или размеры? Посчитаем стоимость сегодня</h2>
+    <p>Ответим в течение рабочего дня — пришлём смету и сроки изготовления.</p>
+    <a href="contacts.html" class="btn btn-primary">Связаться с мастерской</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo">GLC<span>.</span></a>
+        <p class="foot-desc">Резка, закалка и обработка кромки листового стекла. Работаем с частными и коммерческими проектами.</p>
+      </div>
+      <div>
+        <h5>Разделы</h5>
+        <ul>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="about.html">О мастерской</a></li>
+          <li><a href="delivery.html">Доставка и оплата</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Стекло</h5>
+        <ul>
+          <li>Закалённое</li>
+          <li>Термоупрочнённое</li>
+          <li>Оптивайт</li>
+          <li>Кристалл</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Контакты</h5>
+        <ul>
+          <li>+7 (700) 000-00-00</li>
+          <li>hello@vitrum-glass.ru</li>
+          <li>Пн–Сб, 9:00–19:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 GLC. Все права защищены.</span>
+      <span>Демонстрационный сайт</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
