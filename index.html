@@ -3,6 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Мастерская GLC в Астане: резка, закалка, обработка кромки листового стекла — закалённое, оптивайт, кристалл, тонированное. Расчёт стоимости за 15 минут.">
+<link rel="canonical" href="https://glc.kz/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GLC — резка, закалка и обработка стекла в Астане">
+<meta property="og:description" content="Мастерская GLC в Астане: резка, закалка, обработка кромки листового стекла — закалённое, оптивайт, кристалл, тонированное. Расчёт стоимости за 15 минут.">
+<meta property="og:url" content="https://glc.kz/index.html">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Cpolygon points=%2250,6 90,38 74,94 26,94 10,38%22 fill=%22%232E4635%22 stroke=%22%23C9A876%22 stroke-width=%224%22/%3E%3Cpolygon points=%2250,6 90,38 50,50%22 fill=%22%236E8F72%22 opacity=%220.6%22/%3E%3C/svg%3E">
 <title>GLC — стекольная мастерская</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -16,10 +24,10 @@
     <a href="index.html" class="logo">GLC<span>.</span></a>
     <nav class="nav-links">
       <a href="index.html" class="active">Главная</a>
-      <a href="catalog.html">Каталог</a>
-      <a href="about.html">О мастерской</a>
-      <a href="delivery.html">Доставка и оплата</a>
-      <a href="contacts.html">Контакты</a>
+      <a href="Catalog.html">Каталог</a>
+      <a href="About.html">О мастерской</a>
+      <a href="Delivery.html">Доставка и оплата</a>
+      <a href="Contacts.html">Контакты</a>
     </nav>
     <div class="header-right">
       <button class="cart-btn">Корзина <span class="cart-count">0</span></button>
@@ -35,8 +43,8 @@
       <h1>Стекло, которое <em>держит форму</em><br>дома и в деле</h1>
       <p>Закалённое, термоупрочнённое, осветлённое, оптивайт, серое и кристалл — режем, обрабатываем кромку и закаляем под конкретный проект. Расчёт стоимости за 15 минут.</p>
       <div class="hero-ctas">
-        <a href="catalog.html" class="btn btn-primary">Смотреть каталог</a>
-        <a href="contacts.html" class="btn btn-ghost">Рассчитать проект</a>
+        <a href="Catalog.html" class="btn btn-primary">Смотреть каталог</a>
+        <a href="Contacts.html" class="btn btn-ghost">Рассчитать проект</a>
       </div>
     </div>
     <div class="shard-field">
@@ -57,68 +65,92 @@
     <div class="grid-3">
 
       <div class="card">
-        <div class="swatch sw-1"></div>
+        <div class="swatch sw-1"><img src="images/zakalennoe.jpg" alt="Закалённое стекло" loading="lazy"></div>
         <h3>Закалённое</h3>
         <p class="desc">Прошло термическую закалку — прочность выше обычного стекла в 5 раз, при разрушении рассыпается на неострые фрагменты.</p>
         <p class="meta">4–19 мм · безопасное</p>
+        <div class="dims-row">
+          <input type="number" class="dim-input" data-dim="width" placeholder="Ширина, мм" min="1">
+          <input type="number" class="dim-input" data-dim="height" placeholder="Высота, мм" min="1">
+        </div>
         <div class="price-row">
-          <span class="price">от 3 200 ₽<small> / м²</small></span>
-          <button class="add-btn" data-name="Закалённое стекло">В корзину</button>
+          <span class="price">от 3 200 ₸<small> / м²</small></span>
+          <button class="add-btn" data-name="Закалённое стекло" data-price="3200">В корзину</button>
         </div>
       </div>
 
       <div class="card">
-        <div class="swatch sw-2"></div>
+        <div class="swatch sw-2"><img src="images/termouprochnennoe.jpg" alt="Термоупрочнённое стекло" loading="lazy"></div>
         <h3>Термоупрочнённое</h3>
         <p class="desc">Промежуточная прочность между обычным и закалённым стеклом. При разрушении держит форму в проёме.</p>
         <p class="meta">4–12 мм · фасады</p>
+        <div class="dims-row">
+          <input type="number" class="dim-input" data-dim="width" placeholder="Ширина, мм" min="1">
+          <input type="number" class="dim-input" data-dim="height" placeholder="Высота, мм" min="1">
+        </div>
         <div class="price-row">
-          <span class="price">от 2 700 ₽<small> / м²</small></span>
-          <button class="add-btn" data-name="Термоупрочнённое стекло">В корзину</button>
+          <span class="price">от 2 700 ₸<small> / м²</small></span>
+          <button class="add-btn" data-name="Термоупрочнённое стекло" data-price="2700">В корзину</button>
         </div>
       </div>
 
       <div class="card">
-        <div class="swatch sw-3"></div>
+        <div class="swatch sw-3"><img src="images/osvetlennoe.jpg" alt="Осветлённое стекло" loading="lazy"></div>
         <h3>Осветлённое</h3>
         <p class="desc">Низкое содержание оксида железа — минимальный зелёный оттенок в торце, максимальная светопрозрачность.</p>
         <p class="meta">4–10 мм · витрины</p>
+        <div class="dims-row">
+          <input type="number" class="dim-input" data-dim="width" placeholder="Ширина, мм" min="1">
+          <input type="number" class="dim-input" data-dim="height" placeholder="Высота, мм" min="1">
+        </div>
         <div class="price-row">
-          <span class="price">от 4 100 ₽<small> / м²</small></span>
-          <button class="add-btn" data-name="Осветлённое стекло">В корзину</button>
+          <span class="price">от 4 100 ₸<small> / м²</small></span>
+          <button class="add-btn" data-name="Осветлённое стекло" data-price="4100">В корзину</button>
         </div>
       </div>
 
       <div class="card">
-        <div class="swatch sw-4"></div>
+        <div class="swatch sw-4"><img src="images/optiwhite.jpg" alt="Стекло Оптивайт" loading="lazy"></div>
         <h3>Оптивайт</h3>
         <p class="desc">Премиальное сверхпрозрачное стекло без цветового искажения — для мебели и витражей, где важна чистота цвета.</p>
         <p class="meta">4–12 мм · мебель</p>
+        <div class="dims-row">
+          <input type="number" class="dim-input" data-dim="width" placeholder="Ширина, мм" min="1">
+          <input type="number" class="dim-input" data-dim="height" placeholder="Высота, мм" min="1">
+        </div>
         <div class="price-row">
-          <span class="price">от 5 400 ₽<small> / м²</small></span>
-          <button class="add-btn" data-name="Стекло Оптивайт">В корзину</button>
+          <span class="price">от 5 400 ₸<small> / м²</small></span>
+          <button class="add-btn" data-name="Стекло Оптивайт" data-price="5400">В корзину</button>
         </div>
       </div>
 
       <div class="card">
-        <div class="swatch sw-5"></div>
+        <div class="swatch sw-5"><img src="images/seroe.jpg" alt="Серое тонированное стекло" loading="lazy"></div>
         <h3>Серое (тонированное)</h3>
         <p class="desc">Тонировка в массе снижает светопропускание и блики — популярно для фасадов и перегородок в офисах.</p>
         <p class="meta">4–10 мм · перегородки</p>
+        <div class="dims-row">
+          <input type="number" class="dim-input" data-dim="width" placeholder="Ширина, мм" min="1">
+          <input type="number" class="dim-input" data-dim="height" placeholder="Высота, мм" min="1">
+        </div>
         <div class="price-row">
-          <span class="price">от 3 600 ₽<small> / м²</small></span>
-          <button class="add-btn" data-name="Серое стекло">В корзину</button>
+          <span class="price">от 3 600 ₸<small> / м²</small></span>
+          <button class="add-btn" data-name="Серое стекло" data-price="3600">В корзину</button>
         </div>
       </div>
 
       <div class="card">
-        <div class="swatch sw-6"></div>
+        <div class="swatch sw-6"><img src="images/kristall.jpg" alt="Стекло Кристалл" loading="lazy"></div>
         <h3>Кристалл</h3>
         <p class="desc">Максимально прозрачное флоат-стекло высшего сорта без визуальных дефектов — для дверей и перегородок.</p>
         <p class="meta">6–12 мм · двери</p>
+        <div class="dims-row">
+          <input type="number" class="dim-input" data-dim="width" placeholder="Ширина, мм" min="1">
+          <input type="number" class="dim-input" data-dim="height" placeholder="Высота, мм" min="1">
+        </div>
         <div class="price-row">
-          <span class="price">от 4 800 ₽<small> / м²</small></span>
-          <button class="add-btn" data-name="Стекло Кристалл">В корзину</button>
+          <span class="price">от 4 800 ₸<small> / м²</small></span>
+          <button class="add-btn" data-name="Стекло Кристалл" data-price="4800">В корзину</button>
         </div>
       </div>
 
@@ -157,7 +189,25 @@
   <div class="wrap">
     <h2>Есть чертёж или размеры? Посчитаем стоимость сегодня</h2>
     <p>Ответим в течение рабочего дня — пришлём смету и сроки изготовления.</p>
-    <a href="contacts.html" class="btn btn-primary">Связаться с мастерской</a>
+    <a href="Contacts.html" class="btn btn-primary">Связаться с мастерской</a>
+  </div>
+</section>
+
+<section class="band-deep location-section">
+  <div class="wrap">
+    <div class="location-map">
+      <iframe src="https://maps.google.com/maps?q=%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%2C%20%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%95%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%91%D1%80%D1%83%D1%81%D0%B8%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%2021%D0%90&t=&z=16&ie=UTF8&iwloc=&output=embed" loading="lazy" allowfullscreen title="Карта — расположение мастерской GLC"></iframe>
+    </div>
+    <div class="location-info">
+      <span class="eyebrow">Как нас найти</span>
+      <h2 style="color:var(--text-light); margin-top:6px;">Наше местоположение</h2>
+      <div class="info-strip">
+        <div><span class="lbl">Адрес</span>ул. Евгения Брусиловского, 21А, Астана</div>
+        <div><span class="lbl">Телефон</span>+7 708 635 1861</div>
+        <div><span class="lbl">Режим работы</span>Пн–Сб, 9:00–19:00</div>
+      </div>
+      <a class="btn btn-primary" style="margin-top:12px; width:fit-content;" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%2C%20%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%95%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%91%D1%80%D1%83%D1%81%D0%B8%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%2021%D0%90">Построить маршрут</a>
+    </div>
   </div>
 </section>
 
@@ -171,10 +221,10 @@
       <div>
         <h5>Разделы</h5>
         <ul>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="about.html">О мастерской</a></li>
-          <li><a href="delivery.html">Доставка и оплата</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="Catalog.html">Каталог</a></li>
+          <li><a href="About.html">О мастерской</a></li>
+          <li><a href="Delivery.html">Доставка и оплата</a></li>
+          <li><a href="Contacts.html">Контакты</a></li>
         </ul>
       </div>
       <div>
@@ -189,8 +239,8 @@
       <div>
         <h5>Контакты</h5>
         <ul>
-          <li>+7 (700) 000-00-00</li>
-          <li>hello@vitrum-glass.ru</li>
+          <li>+7 708 635 1861</li>
+          <li>info@glc.kz</li>
           <li>Пн–Сб, 9:00–19:00</li>
         </ul>
       </div>
@@ -203,6 +253,5 @@
 </footer>
 
 <div class="toast"></div>
-<script src="script.js"></script>
 </body>
 </html>
